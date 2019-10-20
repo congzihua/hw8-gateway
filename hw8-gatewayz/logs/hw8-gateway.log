@@ -1,0 +1,372 @@
+2019-10-20 10:09:13.787 ERROR 8132 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'proxyRequestHelper', defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$NoActuatorConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2019-10-20 10:13:05.518 ERROR 6360 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'proxyRequestHelper', defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$NoActuatorConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2019-10-20 10:18:45.101 ERROR 9060 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'proxyRequestHelper', defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$NoActuatorConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2019-10-20 10:24:30.781 ERROR 4564 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routesEndpoint' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]: Unsatisfied dependency expressed through method 'routesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'primaryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Unsatisfied dependency expressed through method 'primaryRouteLocator' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'discoveryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientRouteLocator]: Factory method 'discoveryRouteLocator' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+2019-10-20 10:24:30.883 ERROR 4564 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration.discoveryRouteLocator(ZuulProxyAutoConfiguration.java:91)
+
+The following method did not exist:
+
+    org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+
+The method's class, org.springframework.boot.autoconfigure.web.ServerProperties$Servlet, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/ServerProperties$Servlet.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.boot.autoconfigure.web.ServerProperties$Servlet
+
+2019-10-20 10:49:11.960 ERROR 8768 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routesEndpoint' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]: Unsatisfied dependency expressed through method 'routesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'primaryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Unsatisfied dependency expressed through method 'primaryRouteLocator' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'discoveryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientRouteLocator]: Factory method 'discoveryRouteLocator' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+2019-10-20 10:49:12.061 ERROR 8768 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration.discoveryRouteLocator(ZuulProxyAutoConfiguration.java:91)
+
+The following method did not exist:
+
+    org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+
+The method's class, org.springframework.boot.autoconfigure.web.ServerProperties$Servlet, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/ServerProperties$Servlet.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.boot.autoconfigure.web.ServerProperties$Servlet
+
+2019-10-20 10:53:36.251 ERROR 2680 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routesEndpoint' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]: Unsatisfied dependency expressed through method 'routesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'primaryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Unsatisfied dependency expressed through method 'primaryRouteLocator' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'discoveryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientRouteLocator]: Factory method 'discoveryRouteLocator' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+2019-10-20 10:53:36.350 ERROR 2680 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration.discoveryRouteLocator(ZuulProxyAutoConfiguration.java:91)
+
+The following method did not exist:
+
+    org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+
+The method's class, org.springframework.boot.autoconfigure.web.ServerProperties$Servlet, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/ServerProperties$Servlet.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.boot.autoconfigure.web.ServerProperties$Servlet
+
+2019-10-20 10:54:54.140 ERROR 7244 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routesEndpoint' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]: Unsatisfied dependency expressed through method 'routesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'primaryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Unsatisfied dependency expressed through method 'primaryRouteLocator' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'discoveryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientRouteLocator]: Factory method 'discoveryRouteLocator' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+2019-10-20 10:54:54.233 ERROR 7244 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration.discoveryRouteLocator(ZuulProxyAutoConfiguration.java:91)
+
+The following method did not exist:
+
+    org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+
+The method's class, org.springframework.boot.autoconfigure.web.ServerProperties$Servlet, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/ServerProperties$Servlet.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.boot.autoconfigure.web.ServerProperties$Servlet
+
+2019-10-20 10:55:56.071 ERROR 4004 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routesEndpoint' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]: Unsatisfied dependency expressed through method 'routesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'primaryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Unsatisfied dependency expressed through method 'primaryRouteLocator' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'discoveryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientRouteLocator]: Factory method 'discoveryRouteLocator' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+2019-10-20 10:55:56.167 ERROR 4004 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration.discoveryRouteLocator(ZuulProxyAutoConfiguration.java:91)
+
+The following method did not exist:
+
+    org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+
+The method's class, org.springframework.boot.autoconfigure.web.ServerProperties$Servlet, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/ServerProperties$Servlet.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.boot.autoconfigure.web.ServerProperties$Servlet
+
+2019-10-20 11:16:40.945 ERROR 2884 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routesEndpoint' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]: Unsatisfied dependency expressed through method 'routesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'primaryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Unsatisfied dependency expressed through method 'primaryRouteLocator' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'discoveryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientRouteLocator]: Factory method 'discoveryRouteLocator' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+2019-10-20 11:16:41.031 ERROR 2884 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration.discoveryRouteLocator(ZuulProxyAutoConfiguration.java:91)
+
+The following method did not exist:
+
+    org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+
+The method's class, org.springframework.boot.autoconfigure.web.ServerProperties$Servlet, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/ServerProperties$Servlet.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.boot.autoconfigure.web.ServerProperties$Servlet
+
+2019-10-20 11:27:28.515 ERROR 8552 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routesEndpoint' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]: Unsatisfied dependency expressed through method 'routesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'primaryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Unsatisfied dependency expressed through method 'primaryRouteLocator' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'discoveryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientRouteLocator]: Factory method 'discoveryRouteLocator' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+2019-10-20 11:27:28.598 ERROR 8552 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration.discoveryRouteLocator(ZuulProxyAutoConfiguration.java:91)
+
+The following method did not exist:
+
+    org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+
+The method's class, org.springframework.boot.autoconfigure.web.ServerProperties$Servlet, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/ServerProperties$Servlet.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.boot.autoconfigure.web.ServerProperties$Servlet
+
+2019-10-20 11:32:57.154 ERROR 3832 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routesEndpoint' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]: Unsatisfied dependency expressed through method 'routesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'primaryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Unsatisfied dependency expressed through method 'primaryRouteLocator' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'discoveryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientRouteLocator]: Factory method 'discoveryRouteLocator' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+2019-10-20 11:32:57.244 ERROR 3832 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration.discoveryRouteLocator(ZuulProxyAutoConfiguration.java:91)
+
+The following method did not exist:
+
+    org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+
+The method's class, org.springframework.boot.autoconfigure.web.ServerProperties$Servlet, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/ServerProperties$Servlet.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.boot.autoconfigure.web.ServerProperties$Servlet
+
+2019-10-20 11:38:37.967 ERROR 2884 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routesEndpoint' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]: Unsatisfied dependency expressed through method 'routesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'primaryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Unsatisfied dependency expressed through method 'primaryRouteLocator' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'discoveryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientRouteLocator]: Factory method 'discoveryRouteLocator' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+2019-10-20 11:38:38.064 ERROR 2884 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration.discoveryRouteLocator(ZuulProxyAutoConfiguration.java:91)
+
+The following method did not exist:
+
+    org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+
+The method's class, org.springframework.boot.autoconfigure.web.ServerProperties$Servlet, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/ServerProperties$Servlet.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.boot.autoconfigure.web.ServerProperties$Servlet
+
+2019-10-20 11:50:24.918 ERROR 5892 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routesEndpoint' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]: Unsatisfied dependency expressed through method 'routesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'primaryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Unsatisfied dependency expressed through method 'primaryRouteLocator' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'discoveryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientRouteLocator]: Factory method 'discoveryRouteLocator' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+2019-10-20 11:50:25.046 ERROR 5892 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration.discoveryRouteLocator(ZuulProxyAutoConfiguration.java:91)
+
+The following method did not exist:
+
+    org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+
+The method's class, org.springframework.boot.autoconfigure.web.ServerProperties$Servlet, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/ServerProperties$Servlet.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.boot.autoconfigure.web.ServerProperties$Servlet
+
+2019-10-20 11:55:28.054 ERROR 3884 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'routesEndpoint' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]: Unsatisfied dependency expressed through method 'routesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'primaryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Unsatisfied dependency expressed through method 'primaryRouteLocator' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'discoveryRouteLocator' defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.zuul.filters.discovery.DiscoveryClientRouteLocator]: Factory method 'discoveryRouteLocator' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+2019-10-20 11:55:28.144 ERROR 3884 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration.discoveryRouteLocator(ZuulProxyAutoConfiguration.java:91)
+
+The following method did not exist:
+
+    org.springframework.boot.autoconfigure.web.ServerProperties$Servlet.getServletPrefix()Ljava/lang/String;
+
+The method's class, org.springframework.boot.autoconfigure.web.ServerProperties$Servlet, is available from the following locations:
+
+    jar:file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/web/ServerProperties$Servlet.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.boot.autoconfigure.web.ServerProperties$Servlet
+

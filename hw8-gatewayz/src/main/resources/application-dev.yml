@@ -1,0 +1,86 @@
+spring:
+  application:
+    name: hw8-gateway
+server:
+  port: 8081
+eureka:
+  client:
+    serviceUrl:
+     defaultZone: http://127.0.0.1:8761/eureka,http://127.0.0.1:8762/eureka
+    registry-fetch-interval-seconds: 5
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port} 
+servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+management:
+  health:
+    diskspace:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  security:
+    enabled: false
+# hystrix 配置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+      circuitBreaker:
+        requestVolumeThreshold: 50  #熔断触发的最小个数/10s
+        errorThresholdPercentage: 100
+        sleepWindowInMilliseconds: 10000
+    Oauth2Client#postAccessToken(Map):
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+      circuitBreaker:
+        requestVolumeThreshold: 50
+        errorThresholdPercentage: 90
+        sleepWindowInMilliseconds: 10000                
+   # Hystrix  线程池配置
+  threadpool:
+    # 线程池默认配置
+    default:
+      coreSize: 1
+      maxQueueSize: 100
+      metrics:
+        rollingStats:
+          timeInMilliseconds: 10000
+          numBuckets: 1  
+zuul:
+  ignored-services: '*'
+  sensitiveHeaders: 
+  routes:
+    test:
+      path: /test/**
+      serviceId: hw8-test
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
+  add-proxy-headers: true
+  ribbon:
+    eager-load:
+      enabled: true
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+logging:
+  level:
+    root: error
+    com.cloud: error
+  file: logs/${spring.application.name}.log
+               

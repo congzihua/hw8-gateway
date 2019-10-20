@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: register-center-master
+logging:
+  level:
+    root: error    
+  file: logs/${spring.application.name}.log
+server:
+  port: 8761
+  enable-self-preservation: false
+  eviction-interval-timer-in-ms: 3000
+  use-read-only-response-cache: false
+eureka:
+  server:
+    peer-node-read-timeout-ms: 10000
+  instance:
+    lease-renewal-interval-in-seconds: 10  #默认服务续约时间为30S 心跳间隔，5秒
+    lease-expiration-duration-in-seconds: 20 #默认服务失效时间为30S ，eureka默认每隔60秒，会将清单内超时的（默认90秒）剔除掉。
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8762/eureka/      # 将自己注册到peer2这个Eureka上面去
+    register-with-eureka: false
+    fetch-registry: false
+    registry-fetch-interval-seconds: 10 #默认客户端清单更新时间为30秒（每个客户端如不自行配置，默认为30秒） 定时刷新本地缓存时间
+    eureka-service-url-poll-interval-seconds: 30 #轮询Eureka服务端地址变更的时间间隔，默认为300秒，与配置中心结合动态刷新serviceUrl时，需要调整该参数
